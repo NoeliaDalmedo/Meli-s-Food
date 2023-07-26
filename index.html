@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="bg-white"> <!-- Aplicamos la clase 'bg-white' para establecer el fondo blanco -->
 	<!-- inicio encabezado -->
 	<header class="bg-secondary">
 				
@@ -61,48 +61,48 @@
 	</header>
 	<!-- fin encabezado -->
 
-	<!-- inicio parallax -->
-	<section class="parallax">
-		<h4>Melis Food</h4>
-		<p>We select each ingredient to offer you the best quality in pastas and pizzas. Everything is Homemade with love.</p>
-		<p>With latin american taste.</p>
-	</section>
+	<!-- inicio parallax con boostrap-->
+		<section class="parallax"> <!-- Creamos una sección y aplicamos la clase 'parallax' -->
+		<h4 class="text-center text-capitalize">Melis Food</h4>
+		<p class="text-justify">We select each ingredient to offer you the best quality in pastas and pizzas. Everything is Homemade with love.</p>
+		<p class="text-justify">With latin american taste.</p>
+	  </section>
 	<!-- fin parallax  -->
 
-	<section>
-		</div>
-		<div class="galeriaInicio">
-			<div class="hijoGaleriaInicio">
-			<h2>Melis History</h2>		
-			<img src="./assets/imagenes/Delivery.jpg" alt="card">
-			<p>We have a story deeply rooted in passion and flavor. It all began with a love for authentic Italian cuisine and a dream to bring the taste of Italy with a latin american twist to every plate.</p>
-			<p>Our pizzas start with a foundation of handcrafted dough, made with care and allowed to rise to perfection. We believe that great pizza is all about the balance of flavors, so we source the freshest produce, the finest cheeses, and the most flavorful herbs and spices to create unforgettable combinations that will tantalize your taste buds.</p>
-			<p>Our pasta dishes are a labor of love. We take pride in making our pasta from scratch, using traditional methods passed down through generations. Each bite showcases the harmony of al dente pasta, luscious sauces, and carefully selected ingredients that create a symphony of flavors on your palate.</p>
-			<p>As our journey continues, we remain committed to innovation while staying true to our roots. We constantly explore new flavors, experiment with unique toppings, and embrace the evolving tastes of our discerning guests.</p>
-		</div>
-		<div class="hijoGaleriaInicio">
-			<img src="./assets/imagenes/Making gnoqui.jpg" alt="card">
-			<h2>Melis Team</h2>
-			<p>Behind the scenes of our pizza and pasta haven, there's a small, dedicated team working tirelessly to bring you the most delightful dining experience. We may be small in numbers, but we're big on passion, creativity, and a shared love for authentic Italian cuisine.</p>
-			<p>We are the heart and soul of our kitchen. With years of culinary expertise and a deep understanding of Italian flavors, they meticulously craft each pizza and pasta dish with precision and care. From kneading the dough to simmering rich sauces, they pour their expertise into every plate, ensuring that each bite is a burst of mouthwatering delight.</p>
-			<p>We believe that our small team allows us to focus on quality, attention to detail, and personalized service. We take pride in our ability to connect with our guests on a deeper level, remembering your favorite dish, accommodating special requests, and creating an environment that feels like home.</p>
-		</div>
-		
+<!-- Galería Inicio con boostrap-->
+<div class="galeriaInicio container"> <!-- Utilizo la clase 'container' para establecer el ancho máximo y centrar el contenido -->
+	<div class="hijoGaleriaInicio">
+		<h2>Melis History</h2>	
+		<img src="./assets/imagenes/Delivery.jpg" alt="card"> <!-- URL de la imagen en el atributo src -->
+		<p>We have a story deeply rooted in passion and flavor. It all began with a love for authentic Italian cuisine and a dream to bring the taste of Italy with a latin american twist to every plate.</p>
+		<p>Our pizzas start with a foundation of handcrafted dough, made with care and allowed to rise to perfection. We believe that great pizza is all about the balance of flavors, so we source the freshest produce, the finest cheeses, and the most flavorful herbs and spices to create unforgettable combinations that will tantalize your taste buds.</p>
+		<p>Our pasta dishes are a labor of love. We take pride in making our pasta from scratch, using traditional methods passed down through generations. Each bite showcases the harmony of al dente pasta, luscious sauces, and carefully selected ingredients that create a symphony of flavors on your palate.</p>
+		<p>As our journey continues, we remain committed to innovation while staying true to our roots. We constantly explore new flavors, experiment with unique toppings, and embrace the evolving tastes of our discerning guests.</p>
+	</div>
+	<div class="hijoGaleriaInicio">
+		<h2>Melis Team</h2>
+		<img src="./assets/imagenes/Making gnoqui.jpg" alt="cardd"> <!-- URL de la imagen en el atributo src -->
+		<p>Behind the scenes of our pizza and pasta haven, there's a small, dedicated team working tirelessly to bring you the most delightful dining experience. We may be small in numbers, but we're big on passion, creativity, and a shared love for authentic Italian cuisine.</p>
+		<p>We are the heart and soul of our kitchen. With years of culinary expertise and a deep understanding of Italian flavors, they meticulously craft each pizza and pasta dish with precision and care. From kneading the dough to simmering rich sauces, they pour their expertise into every plate, ensuring that each bite is a burst of mouthwatering delight.</p>
+		<p>We believe that our small team allows us to focus on quality, attention to detail, and personalized service. We take pride in our ability to connect with our guests on a deeper level, remembering your favorite dish, accommodating special requests, and creating an environment that feels like home.</p>
+	</div>
+			
 	</section>
 
-	<!-- inicio footer -->
-	<footer class="footer">
-		<div>
-			<a href="#top">Go up</a>
-		</div>
-		<div>
-            <a href=""><i>instagram</i></a>
-            <a href=""><i>facebook</i></a>
-            <a href=""><i>twitter</i></a>
-        </div>
-		<p class="derechosReservados">All rights reserved</p>
-	</footer>
-	<!-- fin footer -->
+<!-- inicio footer -->
+<footer class="footer bg-dark text-white"> <!-- Utilizo las clases 'footer', 'bg-dark' y 'text-white' para los estilos del footer -->
+	<div>
+		<a href="#top">Go up</a>
+	</div>
+	<div>
+		<a href=""><i>instagram</i></a>
+		<a href=""><i>facebook</i></a>
+		<a href=""><i>twitter</i></a>
+	</div>
+	<p class="derechosReservados">Todos los derechos reservados.</p>
+ </footer>
+<!-- fin footer -->
+  
 	<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
