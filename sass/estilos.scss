@@ -1,0 +1,201 @@
+// Definición de variables
+$font-another-day: 'AnotherDay';
+$font-amstagram: 'Amstagram';
+
+// Reglas para usar las fuentes descargadas a la pc
+@font-face {
+	font-family: $font-another-day;
+	src: url('../assets/font/AnotherDay.ttf');
+}
+
+@font-face {
+	font-family: $font-amstagram;
+	src: url('../assets/font/Amstagram.ttf');
+}
+
+body {
+	font-family: 'Josefin Sans';
+	background-color: white;
+	//overflow-x: hidden;
+}
+
+h2 {
+	font-family: $font-amstagram;
+}
+
+.navbar-light .navbar-nav .colorNeutro {
+	color: #795548;
+}
+
+// parallax
+.parallax {
+	background-image: url("../assets/imagenes/Pasta and wine 2.jpg");
+	height: 700px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 30px;
+	margin-bottom: 50px;
+
+	h4, p {
+		font-size: larger;
+		padding: 10px 40px;
+		background-color: rgba(255, 255, 255, 0.7);
+	}
+
+	h4 {
+		text-align: center;
+		text-transform: capitalize;
+		padding-top: 20px;
+	}
+
+	p {
+		text-align: justify;
+	}
+}
+
+// Galería Inicio
+.galeriaInicio {
+	width: 85%;
+	margin: 0 auto;
+	gap: 1rem;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+	.hijoGaleriaInicio {
+		width: 350px;
+		height: 350px;
+		border-radius: 10px;
+		background-color: cornflowerblue;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 0.5rem;
+
+		img {
+			width: 100%;
+			height: 90%;
+			object-fit: cover;
+			border-radius: 10px 10px 0px 0px;
+		}
+	}
+}
+
+// Formulario
+.formClass {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.form {
+	font-family: "Quick";
+	background-color: #BDBDBD;
+	width: 90%;
+	max-width: 400px;
+	border-radius: 1rem;
+	padding: 3.5rem 1.5rem;
+
+	.formCont {
+		width: 100%;
+		display: grid;
+		gap: 1rem;
+		grid-auto-columns: 100%;
+	}
+
+	.formTitle {
+		font-family: "quick";
+		text-align: center;
+		font-size: 1.5rem;
+		margin-bottom: 0.4rem;
+	}
+
+	.formInput {
+		font-family: "quick";
+		font-size: 1rem;
+		padding: 0.8rem 1rem;
+		outline: none;
+		border: none;
+		border: 1px #795548;
+		border-radius: 0.2rem;
+	}
+
+	.formImputMessage {
+		font-family: "quick";
+		resize: none;
+		padding: 1.8rem 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.formCta {
+		font-size: 1rem;
+		background-color: #E64A19;
+		color: #212121;
+		border: none;
+		font-weight: 300;
+		padding: 0.7rem 0;
+		border-radius: 0.2rem;
+		cursor: pointer;
+		font-weight: 400;
+	}
+}
+
+// Texto centrado
+text {
+	text-align: center;
+}
+
+// Inicio Mapa
+.classMap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.map {
+	margin-top: 35px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// Footer
+.footer {
+	height: 30vh;
+	background-color: #212121;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	.derechosReservados {
+		font-family: 'Josefin Sans';
+		color: white;
+	}
+}
+
+// Media queries
+// Media queries para pantallas más pequeñas
+@media (max-width: 768px) {
+	// Estilos para pantallas con un ancho máximo de 768px
+	// Por ejemplo, para teléfonos móviles
+	// Aquí puedes agregar reglas de estilo específicas para pantallas más pequeñas
+}
+
+// Media queries para pantallas medianas
+@media (min-width: 769px) and (max-width: 1024px) {
+	// Estilos para pantallas con un ancho entre 769px y 1024px
+	// Por ejemplo, para tablets
+}
+
+// Media queries para pantallas grandes
+@media (min-width: 1025px) {
+	// Estilos para pantallas con un ancho mínimo de 1025px
+	// Por ejemplo, para computadoras de escritorio
+}
