@@ -26,70 +26,15 @@ h2 {
 	color: #795548;
 }
 
-// Formulario
-.formClass {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
-
-.form {
-	font-family: "Quick";
-	background-color: #BDBDBD;
-	width: 90%;
-	max-width: 400px;
-	border-radius: 1rem;
-	padding: 3.5rem 1.5rem;
-
-	.formCont {
-		width: 100%;
-		display: grid;
-		gap: 1rem;
-		grid-auto-columns: 100%;
-	}
-
-	.formTitle {
-		font-family: "quick";
-		text-align: center;
-		font-size: 1.5rem;
-		margin-bottom: 0.4rem;
-	}
-
-	.formInput {
-		font-family: "quick";
-		font-size: 1rem;
-		padding: 0.8rem 1rem;
-		outline: none;
-		border: none;
-		border: 1px #795548;
-		border-radius: 0.2rem;
-	}
-
-	.formImputMessage {
-		font-family: "quick";
-		resize: none;
-		padding: 1.8rem 1rem;
-		margin-bottom: 0.5rem;
-	}
-
-	.formCta {
-		font-size: 1rem;
-		background-color: #E64A19;
-		color: #212121;
-		border: none;
-		font-weight: 300;
-		padding: 0.7rem 0;
-		border-radius: 0.2rem;
-		cursor: pointer;
-		font-weight: 400;
-	}
-}
-
-// Texto centrado
-text {
-	text-align: center;
-}
+// Estilos para el parallax
+.parallax {
+	min-height: 100vh;
+	background: url('../ruta/imagen-parallax.jpg') fixed;
+	background-size: cover;
+	background-position: center;
+	color: #ffffff; // Color del texto (blanco en este caso)
+	padding: 3rem 0; // Espaciado interno del contenido
+  }
 
 // Media queries
 // Media queries para pantallas más pequeñas
