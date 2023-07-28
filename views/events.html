@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="../css/estilo.css">
 
 	</head>
-	<body>
+	<body class="bg-white"> <!-- Aplico la clase 'bg-white' para establecer el fondo blanco -->
 		<!-- inicio encabezado -->
 		<header class="bg-secondary">
 		
@@ -57,36 +57,48 @@
 			  </div>
 			</div>
 		</nav>
-		<!--fin navegación boostrap-->
+<!--fin navegación boostrap-->
 		</header>
-		<!-- fin encabezado -->
-		<!--Inicio Galería Eventos-->
-		<div class="galeriaInicio container"> <!-- Utilizo la clase 'container' para establecer el ancho máximo y centrar el contenido -->
-		<div class="hijoGaleriaInicio">
+<!-- fin encabezado -->
+<!--Inicio Galería Eventos-->
+<div class="galeriaInicio container"> <!-- Utilizo la clase 'container' para establecer el ancho máximo y centrar el contenido -->
+	<div class="row">
+		<div class="col-md-6">
 			<h2>Markets</h2>
 			<p>Join us for unforgettable culinary events at Meli's. 
-				Find us at different markets around Auckland or contact us to create an unforgettable experience in your next event! From corporate gatherings to private celebrations, our team at Meli's is ready to bring the best culinary experience. Contact us for a quote now!</p>
-				<p>As you explore our Street Market Section, immerse yourself in the lively ambiance, filled with laughter, music, and the joy of shared meals. It's the perfect place to gather with friends, family, and fellow food enthusiasts, creating memories over steaming plates of pasta and mouthwatering slices of pizza.
-				We take pride in sourcing high-quality ingredients from local producers and ensuring that each dish is prepared with care. Our commitment to authenticity and flavor shines through in every bite, making our Street Market Section a must-visit for foodies and anyone seeking an unforgettable culinary adventure.
-				So, come and join us at our Street Market Section, where the tantalizing scents, vibrant colors, and incredible flavors of Italy come together. Whether you're exploring on your own or with a group, our street market is waiting to ignite your senses and take you on a gastronomic journey.
-				</p>
-			<img src="../assets/imagenes/Markets (1).jpg" alt="card"> <!-- Inserta la URL de la imagen en el atributo src -->
+			Find us at different markets around Auckland or contact us to create an unforgettable experience in your next event! From corporate gatherings to private celebrations, our team at Meli's is ready to bring the best culinary experience. Contact us for a quote now!</p>
+			<p>As you explore our Street Market Section, immerse yourself in the lively ambiance, filled with laughter, music, and the joy of shared meals. It's the perfect place to gather with friends, family, and fellow food enthusiasts, creating memories over steaming plates of pasta and mouthwatering slices of pizza.
+			We take pride in sourcing high-quality ingredients from local producers and ensuring that each dish is prepared with care. Our commitment to authenticity and flavor shines through in every bite, making our Street Market Section a must-visit for foodies and anyone seeking an unforgettable culinary adventure.
+			So, come and join us at our Street Market Section, where the tantalizing scents, vibrant colors, and incredible flavors of Italy come together. Whether you're exploring on your own or with a group, our street market is waiting to ignite your senses and take you on a gastronomic journey.
+			</p>
 		</div>
-		<div class="hijoGaleriaInicio">
+		<div class="col-md-6">
+			<div class="d-flex justify-content-end mb-4">
+				<img src="../assets/imagenes/Markets (1).jpg" alt="card" class="img-fluid rounded" style="width: 100%; max-height: 30rem;"> 
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="d-flex justify-content-start mb-4">
+				<img src="../assets/imagenes/Markets (2).jpg" alt="card" class="img-fluid rounded" style="width: 100%; max-height: 30rem;"> <!-- Inserta la URL de la imagen en el atributo src -->
+			</div>
+		</div>
+		<div class="col-md-6">
 			<h2>Private Events</h2>
 			<p>Indulge in the flavors of Italy with a latin american twist, with our exquisite selection of pizza and pasta for your next private event. Whether you're hosting a corporate gathering, a birthday celebration, or a special family occasion, our dedicated team is here to create an unforgettable dining experience for you and your guests.</p>
 			<p>Immerse yourself in the aromas of freshly baked pizzas straight from our wood-fired oven. Our pizzas are crafted with love, using only the finest ingredients, and topped with a variety of mouthwatering toppings. From classic Margherita to gourmet combinations, our pizza selection offers something to satisfy every palate.</p>
 			<p>Our dedicated event planning team is committed to making your private event a success. We will work closely with you to customize a menu that suits your preferences and dietary requirements. Whether you have specific requests or need assistance with event logistics, we're here to make the process seamless and stress-free.
 			Don't miss the opportunity to elevate your private event with the authentic flavors of Italy. Contact us today to reserve your date and let us create an unforgettable dining experience that will leave a lasting impression on you and your guests.
-				
+			
 			Buon appetito!
 			</p>  
-			<img src="../assets/imagenes/Markets (2).jpg" alt="cardd"> <!-- Inserta la URL de la imagen en el atributo src -->
 		</div>
-	<!--fin galería con boostrap-->
-		
+	</div>
+</div>
+<!--fin galería con boostrap-->
 <!-- inicio footer -->
-<footer class="footer bg-dark text-white"> <!-- Utilizo las clases 'footer', 'bg-dark' y 'text-white' para los estilos del footer -->
+<footer class="footer bg-dark text-white container-fluid"> <!-- Utilizo las clases 'footer', 'bg-dark' y 'text-white' para los estilos del footer -->
 	<div>
 		<a href="#top">Go up</a>
 	</div>
