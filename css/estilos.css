@@ -56,7 +56,7 @@ header .navbar-nav .navbar-light .nav-item.colorNeutro .nav-link {
 }
 .carousel-inner .carousel-item img {
   width: 100%;
-  height: 400px; /* Ajusta la altura del carrusel según tus necesidades */
+  height: 400px; /* Ajusta la altura del carrusel según necesidades */
   -o-object-fit: cover;
      object-fit: cover;
 }
