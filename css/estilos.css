@@ -41,13 +41,20 @@ header .navbar-nav .navbar-light .nav-item.colorNeutro .nav-link {
   color: #795548;
 }
 
-.parallax {
-  min-height: 100vh;
-  background: url("../ruta/imagen-parallax.jpg") fixed;
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
-  padding: 3rem 0;
+.parallax h4, .parallax p {
+  font-size: larger;
+  padding: 10px 40px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.parallax h4 {
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 20px;
+}
+
+.parallax p {
+  text-align: justify;
 }
 
 .carousel-inner {
