@@ -4,6 +4,7 @@ $font-amstagram: 'Amstagram';
 $color-primary: #000;
 $color-secondary: white;
 
+
 // Reglas para usar las fuentes descargadas a la pc
 @font-face {
   font-family: $font-another-day;
@@ -16,7 +17,7 @@ $color-secondary: white;
 }
 
 body {
-  font-family: 'Josefin Sans';
+  font-family: 'Josefin Sans', sans-serif;
   color: $color-secondary;
   //overflow-x: hidden;
 
@@ -25,82 +26,169 @@ body {
   }
 }
 
-header {
-  padding: 1rem 0;
-  text-align: center;
-
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-
-    .nav-item {
-      margin: 0 0.5rem;
-
-      .nav-link {
-        color: #795548;
-        font-weight: bold;
-        text-transform: uppercase;
-
-        &:hover {
-          color: #BA68C8;
-        }
-      }
-    }
-
-    .navbar-light {
-      .nav-item {
-        &.colorNeutro {
-          .nav-link {
-            color: #795548;
-          }
-        }
-      }
-    }
-  }
+.navbar-light .navbar-nav .colorNeutro {
+  color: #795548;
 }
 
 // Estilos para el parallax
-.parallax h4, .parallax p {
-	font-size: larger;
-	padding: 10px 40px;
-	background-color: rgba(255, 255, 255, 0.7);
+.parallax {
+  // Imagen elegida
+  background-image: url("../assets/imagenes/Pasta and wine 2.jpg");
+
+  // Definir un alto específico
+  height: 700px;
+
+  // Crear el efecto parallax al scrollear
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // box modeling
+  padding: 50px 30px;
+  margin-bottom: 50px;
+
+  h4, p {
+    font-size: larger;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  h4 {
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+  }
+
+  p {
+    text-align: justify;
+  }
 }
 
-.parallax h4 {
-	text-align: center;
-	text-transform: capitalize;
-	padding-top: 20px;
+/* Ininio Galería Inicio */
+.galeriaInicio {
+  width: 85%;
+  margin: 0 auto;
+  gap: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  .hijoGaleriaInicio {
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+
+    img {
+      width: 100%;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 10px 10px 0px 0px;
+    }
+  }
 }
 
-.parallax p {
-	text-align: justify;
+/* formulario */
+.formClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-// Estilos carousel boostrap 
-.carousel-inner {
-  border-radius: 10px; /* Borde redondeado para el carrusel */
-  overflow: hidden; /* Ocultar las esquinas de las imágenes que salgan del carrusel */
+.form {
+  font-family: "Quick";
+  background-color: #BDBDBD;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1rem;
+  padding: 3.5rem 1.5rem;
 
-  .carousel-item img {
+  .formCont {
     width: 100%;
-    height: 400px; /* Ajusta la altura del carrusel según necesidades */
-    object-fit: cover;
+    display: grid;
+    gap: 1rem;
+    grid-auto-columns: 100%;
   }
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: #000; /* Color de las flechas del carrusel */
+  .formTitle {
+    font-family: "quick";
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: .4rem;
+  }
+
+  .formInput {
+    font-family: "quick";
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    outline: none;
+    border: none;
+    border: 1px #795548;
+    border-radius: 0.2rem;
+  }
+
+  .formImputMessage {
+    font-family: "quick";
+    resize: none;
+    padding: 1.8rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .formCta {
+    font-size: 1rem;
+    background-color: #E64A19;
+    color: #212121;
+    border: none;
+    font-weight: 300;
+    padding: .7rem 0;
+    border-radius: .2rem;
+    cursor: pointer;
+    font-weight: 400;
   }
 }
 
-.footer {
-  padding: 20px 0; /* Espaciado interno del footer */
+text {
   text-align: center;
+}
 
+/* Inicio Mapa */
+.classMap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.map {
+  margin-top: 35px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  height: 30vh;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .derechosReservados {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+  }
+
+  /* Fin footer */
   .icons-wrapper {
     margin-top: 10px;
 
@@ -193,6 +281,19 @@ header {
         transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
       }
     }
+  }
+}
+
+// Error
+.galeriaError {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px); /* El 120px es la altura del header y footer combinados */
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 
