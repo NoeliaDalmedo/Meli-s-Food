@@ -15,17 +15,23 @@ $color-secondary: white;
   font-family: $font-amstagram;
   src: url('../assets/font/Amstagram.ttf');
 }
-
-body {
-  font-family: 'Josefin Sans', sans-serif;
-  color: $color-secondary;
-  //overflow-x: hidden;
-
-  h2 {
-    font-family: $font-amstagram;
+@mixin font-face($font-family, $font-path) {
+  @font-face {
+    font-family: #{$font-family};
+    src: url('#{$font-path}');
   }
 }
 
+body{
+  @include (font-face(-family, -path))
+  color: $color-secondary;
+  //overflow-x: hidden;
+}
+
+h2 {
+   font-family: $font-amstagram;
+  }
+}
 .navbar-light .navbar-nav .colorNeutro {
   color: #795548;
 }
