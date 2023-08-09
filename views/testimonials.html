@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -70,21 +70,23 @@ rel="stylesheet">
 
 <!-- Galería Testimonios con Bootstrap Carrusel -->
 <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
-	<div class="carousel-inner">
+	<h2 class="text-center mb-4">Here's what our delighted customers have to say</h2> 
+	<div class="carousel-inner" style="max-height: 400px;"> <!-- Para reducir la altura -->
+
 		<div class="carousel-item active">
-			<img src="../assets/imagenes/Feedback (8).png" alt="Testimonial 1" class="d-block w-100">
+			<img src="../assets/imagenes/Imagenes Carrousel 1.jpg" alt="Testimonial 1" class="d-block w-100">
 		</div>
 		<div class="carousel-item">
-			<img src="../assets/imagenes/Feedback (9).png" alt="Testimonial 2" class="d-block w-100">
+			<img src="../assets/imagenes/Imagenes Carrousel 2.jpg" alt="Testimonial 2" class="d-block w-100">
 		</div>
 		<div class="carousel-item">
-			<img src="../assets/imagenes/Feedback (10).png" alt="Testimonial 3" class="d-block w-100">
+			<img src="../assets/imagenes/Imagenes carrousel 3.jpg" alt="Testimonial 3" class="d-block w-100">
 		</div>
 		<div class="carousel-item">
-			<img src="../assets/imagenes/Feedback (2).png" alt="Testimonial 4" class="d-block w-100">
+			<img src="../assets/imagenes/Delivery.jpg" alt="Testimonial 4" class="d-block w-100">
 		</div>
 		<div class="carousel-item">
-			<img src="../assets/imagenes/Feedback (3).png" alt="Testimonial 5" class="d-block w-100">
+			<img src="../assets/imagenes/Imagenes carrousel 4.jpg" alt="Testimonial 5" class="d-block w-100">
 		</div>
 	</div>
 	<button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
@@ -97,7 +99,60 @@ rel="stylesheet">
 	</button>
 </div>
 <!--fin galería testimonials-->
-
+<!-- Gallery with Bootstrap grid -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Pizza 2.jpg" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">Andrew Forbes Mobberley: “Great Pizza and amazing service” Value for money with quality ingredients”.</p>
+            </div>
+        </div>
+		<div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Feedback (10).png" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">Nicolás Aravena: "What an amazing homemade pasta and pizza! The Sorrentinos dough was perfectly cooked and the pizza base so crispy. For those looking for a vegetarian option, we had Spinach & Ricotta Sorrentinos plus a Caramelized Onion and blue cheese Pizza and it just exceeded our expectations."</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Imagenes carrousel 3.jpg" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">Areeya Peters: “Definitely recommend Melis food 100%! The pizzas were so delicious and fresh and the Sorrentino are to die for!!</p>
+            </div>
+        </div>        
+        <div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Feedback (9).png" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">PomeyGeza: “The highlight of my day.”</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Feedback (8).png" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">Chechu Valdez: "The  best way to finish the day! Thanks | Great dinner!"</p>
+            </div>
+        </div>
+		<div class="col-md-4">
+            <div class="d-flex flex-column align-items-center mb-4">
+                <img src="../assets/imagenes/Pasta and wine.jpg" alt="Feedback from clients"
+                    class="img-fluid rounded-circle"
+                    style="width: 150px; height: 150px;">
+                <p class="mt-3 text-center">Dyego Cortinas: “Great Pasta, go for those Sorrentinos!!”</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--fin galería con boostrap-->
 <!-- inicio footer -->
 <footer class="footer bg-dark text-white container-fluid">
 	<div class="text-center">

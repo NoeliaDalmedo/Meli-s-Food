@@ -31,7 +31,7 @@ body{
 h2 {
    font-family: $font-amstagram;
   }
-}
+
 .navbar-light .navbar-nav .colorNeutro {
   color: #795548;
 }
@@ -188,7 +188,10 @@ text {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-
+  a {
+    color:white;
+    text-decoration: none;
+  }
   .derechosReservados {
     font-family: 'Josefin Sans', sans-serif;
     color: white;

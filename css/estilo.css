@@ -64,7 +64,7 @@ h2{
 .parallax p {
 	text-align: justify;
 }
- /*Ininio Galería Inicio*/
+/*Ininio Galería Inicio*/
 
 .galeriaInicio{
     width:85%;
@@ -179,6 +179,10 @@ text{
         flex-direction: column;
         justify-content: space-around;
         align-items:center;
+    }
+    a {
+      color:white;
+      text-decoration: none;
     }
     .derechosReservados{
         font-family: 'Josefin Sans';
