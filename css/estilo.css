@@ -48,11 +48,14 @@ h2{
 	padding: 50px 30px;
 	margin-bottom: 50px;
 }
+.paralaxTexto {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 
 .parallax h4, .parallax p {
 	font-size: larger;
 	padding: 10px 40px;
-	background-color: rgba(255, 255, 255, 0.7);
+  text-align: justify center;
 }
 
 .parallax h4 {
