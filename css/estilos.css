@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "AnotherDay";
+  src: url("../assets/font/AnotherDay.ttf");
+}
+@font-face {
+  font-family: "Amstagram";
+  src: url("../assets/font/Amstagram.ttf");
+}
+body {
+  color: white;
+}
+@font-face {
+  font-family: Amstagram;
+  src: url("../assets/font/Amstagram.ttf");
+}
+
+h2 {
+  font-family: "Amstagram";
+}
+
+.navbar-light .navbar-nav .colorNeutro {
+  color: #795548;
+}
+
+/* Inicio Galería Inicio */
+/* formulario */
+/* Inicio Mapa */
+/* Footer *//*# sourceMappingURL=estilos.css.map */

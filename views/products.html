@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="pasta, pizza, roqueford, mozzarella, Latin American, North Shore, delivery">
+	<meta name="description" content="Enjoy the delicious combination of homemade pizza and pasta in the comfort of your home. Authentic flavors delivered to your door with home delivery! place your order today">
 	<title>Our Products</title>
 	 <!--favicon: imagen que se ve en la solapa de la página web, junto al nombre-->
 	 <link rel="shorcut icon" href="../Favicon.ico.png"type="image/x-ico">
 	 <!--incluir correctametne CSS en el proyecto: a continuación vinculo html con la hoja de estilo en cascada, con un link-->
-	<!-- link google fonts -->
+	<!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	 <!-- link google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap"
@@ -21,24 +25,25 @@
 	<link rel="stylesheet" href="../css/estilo.css">
 		
 	</head>
-	<body>
+	<body class="bg-white"> <!-- Aplico la clase 'bg-white' para establecer el fondo blanco -->
 	<!-- inicio encabezado -->
 	<header class="bg-secondary">
 					
 	<!-- inicio navegación boostrap-->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			 <a class="navbar-brand" href="#">
-				<img src="../assets/imagenes/Melis logo.jpg" alt="" width="30" height="24">
-				With a latin american touch
-			 </a>
+			<a class="navbar-brand" href="../index.html">
+				<img src="../assets/imagenes/Melis_logo-sin fondo.png" alt="" width="50" height="50" alt="Melis Food logo, including the word Melis in italic, under a 
+				Pizza mallet bun being kneaded by a wooden rolling pin">
+				With a Latin American Touch
+			</a>
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center align-items-center">
 				  <li class="nav-item">
-					<a class="nav-link colorNeutro " aria-current="page" href="/index.html">Home</a>
+					<a class="nav-link colorNeutro " aria-current="page" href="../index.html">Home</a>
 				  </li>
 				  <li class="nav-item">
 					<a class="nav-link active" href="#">Products</a>
@@ -63,36 +68,57 @@
 	</header>
 <!-- fin encabezado -->
 
-	<section>
-		<article>
-			<h2>Our Pizza</h2>
-			<p>Welcome to amazing pizzas at Meli's! Our mouthwatering pizzas are crafted with love and the finest ingredients. From crunchy dough, homemade sauce, and high-quality cheese and toppings, each slice is a flavorful journey you won't forget. Join us and indulge in a pizza experience like no other. 
-				Order now!</p>
-			
-			<img src="../assets/imagenes/Pizza and wine.jpg" alt="">
-		</article>
-		<article>
+<!-- Galería Productos con Boostrap-->
+<div class="galeriaInicio container"> <!-- Uso la clase 'container' para establecer el ancho máximo y centrar el contenido -->
+	<div class="row">
+		<div class="col-md-6 d-flex flex-column">
+			<div class="d-flex justify-content-center mb-4">
+				<img src="../assets/imagenes/Pasta and wine.jpg" alt="card" class="img-fluid rounded-circle mr-2" style="width: 5cm; height: 5cm;" alt="Blue artisan plate with sorrentinos in white sauce; with a glass of wine in the upper right margin and some white flowers in the upper left margin"> 
+				<img src="../assets/imagenes/Pasta 2.jpg" alt="card" class="img-fluid rounded-circle ml-2" style="width: 5cm; height: 5cm;" alt="white plate of sonrrentinos with pink sauce"> 
+			</div>
 			<h2>Our Pasta</h2>
 			<p>Discover pasta perfection at Meli's. Our carefully crafted pasta dishes are homemade with love and the freshest ingredients. From classic favorites to unique creations, our menu offers a tantalizing selection that will satisfy all pasta lovers. Join us and indulge in a culinary journey that will satisfy your cravings.</p>
-			
-			<img src="../assets/imagenes/Pasta and wine.jpg" alt="">
-		</article>
-	</section>
+			<h2>Our pasta selection</h2>
+			<p> Spaghetti or Sorrentinos<p>
+			<p>(pasta filled with two options: 
+				Ham and Cheese or Ricotta and Spinach)</p>
+			<h2>Our sauces selection</h2>
+			<p>• Latin American Carbonara: Ham, mashrooms and onion in a creamy sauce. </p> 
+			<p>• Pink Sauce: Onion, white wine, tomato passata in a creamy sauce. </p>
+			<p>• Bolognesa: Minced beef, onion, capsicum and spices in a tomato sauce.</p>
+		</div>
+		<div class="col-md-6 d-flex flex-column">
+			<div class="d-flex justify-content-center mb-4">
+				<img src="../assets/imagenes/Pizza and wine.jpg" alt="card" class="img-fluid rounded-circle mr-2" style="width: 5cm; height: 5cm;" alt="Rectangular bacon and mozzarella pizza on a wooden board, presented with a bottle of red wine. In the upper margin a knife to cut pizza"> 
+				<img src="../assets/imagenes/Pizza Table.jpg" alt="card" class="img-fluid rounded-circle ml-2" style="width: 5cm; height: 5cm;" alt="Close-up to a four cheese pizza presented on a wooden board"> 
+			</div>
+			<h2>Our Pizza</h2>
+			<p>Welcome to amazing pizzas at Meli's! Our mouthwatering pizzas are crafted with love and the finest ingredients. From crunchy dough, homemade sauce, and high-quality cheese and toppings, each slice is a flavorful journey you won't forget. Join us and indulge in a pizza experience like no other. Order now!</p>
+			<h2>Our pizza selection</h2>
+			<p> • Ham and cheese </p>
+			<p> • Margherita (basil and tomato)</p>
+			<p> • Pepperoni</p>
+			<p> • Mashrooms</p>
+			<p> • Blue cheese and caramelized onion</p>
+			<p> • Meat lover (ham, pepperoni and bacon)</p>
+		</div>
+	</div>
+</div>
+<!-- inicio footer -->
+<footer class="footer bg-dark text-white container-fluid">
+	<div class="text-center">
+	  <a href="#top">Go up</a>
+	</div>
+	<div class="icons-wrapper">
+	  <!-- Use Bootstrap social icons -->
+	  <a href=" https://www.instagram.com/melisfoodnz/" class="ri-instagram-line icon"></a>
+	  <a href=" https://www.facebook.com/profile.php?id=100090721569503" class="ri-facebook-circle-line icon"></a>
+	</div>
+	<p class="derechosReservados text-center mt-3">Todos los derechos reservados | +64 22 549 0885</p>
+  </footer>
+  <!-- fin footer -->
 
-	<!-- inicio footer -->
-	<footer class="footer">
-		<div>
-			<a href="#top">Go up</a>
-		</div>
-		<div>
-			<a href=""><i>instagram</i></a>
-			<a href=""><i>facebook</i></a>
-			<a href=""><i>twitter</i></a>
-		</div>
-		<p class="derechosReservados">All rights reserved</p>
-	</footer>
-	<!-- fin footer -->
-	<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

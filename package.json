@@ -1,0 +1,11 @@
+{
+  "name": "meli-s-food",
+  "version": "1.0.0",
+  "description": "sass_animaciones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "noelia",
+  "license": "ISC"
+}

@@ -1,108 +1,118 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Melis Food</title>
+	<meta name="keywords" content="Melis Food, Meli´s Food, pasta, pizza, Latin American, North Shore, delivery">
+	<title>Meli´s Food</title>
 	<!--favicon: imagen que se ve en la solapa de la página web, junto al nombre-->
 	<link rel="shorcut icon" href="./Favicon.ico.png"type="image/x-ico">
-	<!--incluir correctametne CSS en el proyecto: a continuación vinculo html con la hoja de estilo en cascada, con un link-->
-  	<!-- link google fonts -->
+	<!--incluyo CSS en el proyecto: vinculo html con la hoja de estilo en cascada, con un link-->
+  	<!-- Font icons pulled from remix icon CDN (Content delivery network) -->
+	  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<!-- link google fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<!--linkeo el boostrap que descargué y descomprimí en mi proyecto, uso min para que descargue más rápido en mi proyecto-->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500;600;700&display=swap"
 		rel="stylesheet">
-	<!-- linkear css después, por la cascada -->
+	<!-- linkeo css después, por la cascada -->
 	<link rel="stylesheet" href="css/estilo.css">
 
 </head>
 
-<body>
+<body class="bg-white"> <!-- Aplico la clase 'bg-white' para establecer el fondo blanco -->
 	<!-- inicio encabezado -->
 	<header class="bg-secondary">
 				
-	<!-- inicio navegación boostrap-->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="container">
-			  <a class="navbar-brand" href="#">
-				<img src="./assets/imagenes/Melis logo.jpg" alt="" width="30" height="24">
-				With a latin american touch
-			  </a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center align-items-center">
-				  <li class="nav-item">
-					<a class="nav-link active " aria-current="page" href="#">Home</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link colorNeutro" href="./views/products.html">Products</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link colorNeutro" href="./views/events.html">Events</a>
-				  </li>
-				  <li class="nav-item ">
-					<a class="nav-link colorNeutro" href="./views/howtofindus.html">How to find us</a>
-				  </li>
-				  <li class="nav-item ">
-					<a class="nav-link colorNeutro" href="./views/testimonials.html">Testimonials</a>
-				  </li>
-				  
-				</ul>
-			   
-			  </div>
-			</div>
-		  </nav>
-	<!--fin navegación boostrap-->
+<!-- inicio navegación boostrap-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">
+				<img src="./assets/imagenes/Melis_logo-sin fondo.png" alt="" width="50" height="50" alt="Melis Food logo, including the word Melis in italic, under a 
+				Pizza mallet bun being kneaded by a wooden rolling pin">
+				With a Latin American Touch
+			</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center align-items-center">
+			  <li class="nav-item">
+				<a class="nav-link active " aria-current="page" href="#">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link colorNeutro" href="./views/products.html">Products</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link colorNeutro" href="./views/events.html">Events</a>
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link colorNeutro" href="./views/howtofindus.html">How to find us</a>
+			  </li>
+			  <li class="nav-item ">
+				<a class="nav-link colorNeutro" href="./views/testimonials.html">Testimonials</a>
+			  </li>
+			</ul>
+		</div>
+	</div>
+ </nav>
+<!--fin navegación boostrap-->
 	</header>
-	<!-- fin encabezado -->
-
-	<!-- inicio parallax -->
+<!-- fin encabezado -->
+<!-- inicio parallax -->
 	<section class="parallax">
-		<h4>Melis Food</h4>
-		<p>We select each ingredient to offer you the best quality in pastas and pizzas. Everything is Homemade with love.</p>
-		<p>With latin american taste.</p>
+		<div class="paralaxTexto">
+			<h4>Meli´s Food</h4>
+			<p>Homemade pizza & pasta</p>
+			<p>We select each ingredient to offer you the best quality in pastas and pizzas. Everything is Homemade with love.</p>
+		</div>
 	</section>
-	<!-- fin parallax  -->
-
-	<section>
+<!-- fin parallax  -->
+<!--inicio galería con boostrap-->
+	<div class="galeriaInicio container"> <!-- Uso la clase 'container' para establecer el ancho máximo y centrar el contenido -->
+		<div class="row">
+			<div class="col-md-6 d-flex flex-column">
+				<div class="d-flex justify-content-center mb-4">
+					<img src="./assets/imagenes/Delivery.jpg" alt="card" class="img-fluid rounded-circle mr-2" style="width: 5cm; height: 5cm;" alt="
+					Close-up of a package of MEli food (wooden paper bag with a label with the Meli logo on a white background)"> 
+				</div>
+				<h2>Melis History</h2>
+				<p>We have a story deeply rooted in passion and flavor. It all began with a love for authentic Latin American cuisine and a dream to bring the taste of Italy with a latin american twist to every plate.</p>
+				<p>Our pizzas start with a foundation of <span class="bold">handcrafted dough</span>, made with care and allowed to rise to perfection. We believe that great pizza is all about the balance of flavors, so we source the freshest produce, the finest cheeses, and the most flavorful herbs and spices to create unforgettable combinations that will tantalize your taste buds.</p>
+				<p>Our pasta dishes are a labor of <span class="bold">love</span>. We take pride in making our pasta from scratch, using traditional methods. Each bite showcases the harmony of al dente pasta, luscious sauces, and carefully selected ingredients that create a symphony of flavors on your palate.</p>
+				<p>As our journey continues, we constantly explore new flavors, experiment with unique toppings, and embrace the evolving tastes of our discerning guests.</p>
+			</div>
+			<div class="col-md-6 d-flex flex-column">
+				<div class="d-flex justify-content-center mb-4">
+					<img src="./assets/imagenes/Making gnoqui.jpg" alt="card" class="img-fluid rounded-circle mr-2" style="width: 5cm; height: 5cm;" alt="
+					Shot of a small tube of gnocchi mallet, being cut with a small blade, on a dark floured table"> 
+				</div>
+				<h2>Our Team</h2>
+				<p>Behind the scenes of our pizza and pasta haven, there's a small, dedicated team working tirelessly to bring you the most delightful dining experience. We may be small in numbers, but we're big on passion, creativity, and a shared love for authentic Italian cuisine.</p>
+				<p>We are the heart and soul of our kitchen. With years of culinary expertise and a deep understanding of Latin American flavors, they meticulously craft each pizza and pasta dish with precision and care. From kneading the dough to simmering rich sauces, they pour their expertise into every plate, ensuring that each bite is a burst of mouthwatering delight.</p>
+				<p>We believe that our small team allows us to focus on <span class="bold">detail</span>, and <span class="bold">personalized service</span>. We take pride in our ability to connect with our guests on a deeper level, remembering your favorite dish, accommodating special requests, and creating an environment that feels like home.</p>
+			</div>
 		</div>
-		<div class="galeriaInicio">
-			<div class="hijoGaleriaInicio">
-			<h2>Melis History</h2>		
-			<img src="./assets/imagenes/Delivery.jpg" alt="card">
-			<p>We have a story deeply rooted in passion and flavor. It all began with a love for authentic Italian cuisine and a dream to bring the taste of Italy with a latin american twist to every plate.</p>
-			<p>Our pizzas start with a foundation of handcrafted dough, made with care and allowed to rise to perfection. We believe that great pizza is all about the balance of flavors, so we source the freshest produce, the finest cheeses, and the most flavorful herbs and spices to create unforgettable combinations that will tantalize your taste buds.</p>
-			<p>Our pasta dishes are a labor of love. We take pride in making our pasta from scratch, using traditional methods passed down through generations. Each bite showcases the harmony of al dente pasta, luscious sauces, and carefully selected ingredients that create a symphony of flavors on your palate.</p>
-			<p>As our journey continues, we remain committed to innovation while staying true to our roots. We constantly explore new flavors, experiment with unique toppings, and embrace the evolving tastes of our discerning guests.</p>
-		</div>
-		<div class="hijoGaleriaInicio">
-			<img src="./assets/imagenes/Making gnoqui.jpg" alt="card">
-			<h2>Melis Team</h2>
-			<p>Behind the scenes of our pizza and pasta haven, there's a small, dedicated team working tirelessly to bring you the most delightful dining experience. We may be small in numbers, but we're big on passion, creativity, and a shared love for authentic Italian cuisine.</p>
-			<p>We are the heart and soul of our kitchen. With years of culinary expertise and a deep understanding of Italian flavors, they meticulously craft each pizza and pasta dish with precision and care. From kneading the dough to simmering rich sauces, they pour their expertise into every plate, ensuring that each bite is a burst of mouthwatering delight.</p>
-			<p>We believe that our small team allows us to focus on quality, attention to detail, and personalized service. We take pride in our ability to connect with our guests on a deeper level, remembering your favorite dish, accommodating special requests, and creating an environment that feels like home.</p>
-		</div>
-		
-	</section>
-
-	<!-- inicio footer -->
-	<footer class="footer">
-		<div>
-			<a href="#top">Go up</a>
-		</div>
-		<div>
-            <a href=""><i>instagram</i></a>
-            <a href=""><i>facebook</i></a>
-            <a href=""><i>twitter</i></a>
-        </div>
-		<p class="derechosReservados">All rights reserved</p>
-	</footer>
-	<!-- fin footer -->
+	</div>
+<!--fin galería con boostrap-->
+<!-- inicio footer -->
+<footer class="footer bg-dark text-white container-fluid">
+	<div class="text-center">
+	  <a href="#top">Go up</a>
+	</div>
+	<div class="icons-wrapper">
+ <!-- Use Bootstrap social icons -->
+	  <a href=" https://www.instagram.com/melisfoodnz/" class="ri-instagram-line icon"></a>
+	  <a href=" https://www.facebook.com/profile.php?id=100090721569503" class="ri-facebook-circle-line icon"></a>
+	</div>
+	<p class="derechosReservados text-center mt-3">Todos los derechos reservados | +64 22 549 0885</p>
+</footer>
+<!-- fin footer -->
+  
+  
 	<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
