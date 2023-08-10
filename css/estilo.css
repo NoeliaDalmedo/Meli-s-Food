@@ -25,7 +25,7 @@ h2{
 }
 
 .navbar-light .navbar-nav .colorNeutro{
-	color:#795548;
+	color:#E64A19;
 }
 
 
@@ -173,7 +173,7 @@ text{
     justify-content: center;
     align-items: center;
     }
-
+    
     /*Footer*/
     .footer{
         height: 30vh;
