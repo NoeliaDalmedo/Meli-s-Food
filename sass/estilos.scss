@@ -103,7 +103,19 @@ body{
     }
   }
 }
+/* Estilo personalizado para el carrusel */
+.carousel-container {
+  max-width: 100%; /* Ancho máximo deseado */
+  max-height: 400px; /* Altura máxima deseada */
+  overflow: hidden; /* Oculta las partes de la imagen que superen la altura máxima */
+}
 
+/* Estilo para las imágenes dentro del carrusel */
+.img-carousel {
+  object-fit: cover; /* Ajusta la imagen al tamaño del contenedor */
+  width: 100%;
+  height: 100%;
+}
 /* formulario */
 .formClass {
   display: flex;
